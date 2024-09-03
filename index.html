@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elbrus Circassian Dance Troupe</title>
+    <link rel="preload" href="IMG_5724 (1).jpg" as="image">
     <style>
         body, html {
             height: 100%;
             margin: 0;
             overflow: hidden;
             font-family: Arial, sans-serif;
+            background-color: #000; /* Fallback color */
             background: url('IMG_5724 (1).jpg') no-repeat center center fixed;
             background-size: cover;
         }
@@ -20,7 +22,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(700, 700, 700, 0.6); /* Transparent overlay */
+            background-color: rgba(70, 70, 70, 0.6); /* Transparent overlay */
             z-index: 1;
         }
 
@@ -45,17 +47,15 @@
 
         .container h1 {
             color: black;
-            font-size: 1.5em;
-            margin-bottom: 20px;
+            font-size: 2em;
             text-align: center;
-            margin-top: -50px; /* Move the text up slightly */
-            margin-bottom: 40px;
-
+            margin-top: -50px; /* Keep the text slightly moved up */
+            margin-bottom: 40px; /* Add space below the header */
         }
 
         .btn {
             background-color: transparent; /* Transparent background */
-            border: 2px solid black; /* White border */
+            border: 2px solid black; /* Black border */
             color: black;
             padding: 10px 20px;
             text-align: center;
@@ -90,9 +90,9 @@
 </head>
 <body>
     <div class="overlay"></div> <!-- Transparent overlay -->
-    
+
     <img src="ELBRUS Logo.png" alt="Elbrus Logo" class="logo"> <!-- Logo at the top -->
-    
+
     <div class="container">
         <h1>Elbrus Circassian Dance Troupe</h1>
         <a href="Arabic.png" target="_blank" class="btn">Arabic</a>
