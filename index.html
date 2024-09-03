@@ -9,7 +9,6 @@
     <link rel="preload" href="IMG_5724 (1).jpg" as="image">
 
     <style>
-        /* Fallback background color to display while the image is loading */
         body, html {
             height: 100%;
             margin: 0;
@@ -20,7 +19,6 @@
             background-size: cover;
         }
 
-        /* Loading overlay to show while the background image is loading */
         #loading {
             position: fixed;
             top: 0;
@@ -67,7 +65,7 @@
 
         .container h1 {
             color: black;
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin-bottom: 20px;
             text-align: center;
             margin-top: -50px; /* Move the text up slightly */
@@ -78,33 +76,29 @@
             background-color: transparent; /* Transparent background */
             border: 2px solid black; /* Black border */
             color: black;
-            padding: 20px 30px; /* Adjusted padding for larger buttons */
+            padding: 20px 30px; /* Increase vertical padding for taller buttons */
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 1.5em; /* Increased font size */
-            margin: 20px;
+            margin: 20px 0; /* Increase vertical spacing between buttons */
             cursor: pointer;
             border-radius: 50px; /* More rounded corners */
-            width: 80%; /* Wider buttons */
-            max-width: 400px; /* Max width to control the size */
+            width: 40%; /* Wider buttons */
+            max-width: 300px; /* Control maximum width */
             transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-}
+        }
 
         .btn:hover {
             background-color: rgba(0, 0, 0, 0.1); /* Subtle background change on hover */
             color: black; /* Keep text color black on hover */
-}
+        }
 
         @media (max-width: 600px) {
-            .container h1 {
-                font-size: 1.5em;
-            }
-
             .btn {
-                padding: 8px 16px;
-                font-size: 1em;
-                width: 80%;
+                padding: 20px 30px; /* Keep padding consistent */
+                font-size: 1.5em; /* Same font size */
+                width: 60%; /* Same width */
             }
         }
     </style>
