@@ -14,8 +14,8 @@
             margin: 0;
             overflow: hidden;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Fallback color */
-            background: url('IMG_5724 (1).jpg') no-repeat center center fixed;
+            background: linear-gradient(to bottom, rgba(150, 150, 150, 0.3) 0%, rgba(800, 800, 800, 0.7) 100%), 
+                        url('IMG_5724 (1).jpg') no-repeat center center fixed;
             background-size: cover;
         }
 
@@ -34,19 +34,18 @@
             font-size: 1.5em;
         }
 
-        .overlay {
+         .overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(700, 700, 700, 0.6); /* Transparent overlay */
             z-index: 1;
         }
 
         .logo {
             display: block;
-            margin: 40px auto 20px auto; /* Increase the top margin to move the logo down */
+            margin: 70px auto 20px auto; /* Increase the top margin to move the logo down */
             width: 150px; /* Adjust the logo size as needed */
             z-index: 2;
             position: relative;
@@ -60,7 +59,7 @@
             align-items: center;
             height: calc(100% - 100px); /* Adjust container height */
             z-index: 2;
-            margin-top: -60px; /* Move the container up */
+            margin-top: -90px; /* Move the container up */
         }
 
         .container h1 {
@@ -68,20 +67,20 @@
             font-size: 1.2em;
             margin-bottom: 20px;
             text-align: center;
-            margin-top: -50px; /* Move the text up slightly */
+            margin-top: -80px; /* Move the text up slightly */
             margin-bottom: 40px;
         }
 
         .btn {
-            background-color: transparent; /* Transparent background */
+            background-color: rgba(0,0,0,0.2); /* Transparent background */
             border: 2px solid black; /* Black border */
             color: black;
-            padding: 15px 25px; /* Increase vertical padding for taller buttons */
+            padding: 20px 30px; /* Increase vertical padding for taller buttons */
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: 1.5em; /* Increased font size */
-            margin: 15px 0; /* Increase vertical spacing between buttons */
+            margin: 20px 0; /* Increase vertical spacing between buttons */
             cursor: pointer;
             border-radius: 50px; /* More rounded corners */
             width: 40%; /* Wider buttons */
@@ -96,7 +95,7 @@
 
         @media (max-width: 600px) {
             .btn {
-                padding: 15px 25px; /* Keep padding consistent */
+                padding: 20px 30px; /* Keep padding consistent */
                 font-size: 1.5em; /* Same font size */
                 width: 60%; /* Same width */
             }
