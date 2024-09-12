@@ -48,7 +48,9 @@
 
         .logo {
             display: block;
-            margin: 40px auto 20px auto; /* Increase the top margin to move the logo down */
+            margin: 0 auto ; /* Increase the top margin to move the logo down */
+            margin-top: 60px;
+            margin-bottom: 20px; /* Add some space after the logo */
             width: 150px; /* Adjust the logo size as needed */
             z-index: 2;
             position: relative;
@@ -60,7 +62,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: calc(100% - 100px); /* Adjust container height */
+            height: 100vh; /* Adjust container height */
             z-index: 2;
             margin-top: -80px; /* Move the container up */
         }
@@ -79,16 +81,16 @@
             background-color: rgba(0,0,0,0.3); /* Transparent background */
             border: 2px solid black; /* Black border */
             color: black;
-            padding: 2vw 4vw; /* Increase vertical padding for taller buttons */
+            padding: 15px 25px; /* Increase vertical padding for taller buttons */
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-family: 'Open Sans', sans-serif;
             font-size: 1.4rem; /* Increased font size */
-            margin: 2vw 0 ; /* Increase vertical spacing between buttons */
+            margin: 10px 0 ; /* Increase vertical spacing between buttons */
             cursor: pointer;
             border-radius: 50px; /* More rounded corners */
-            width: 60vw /* Wider buttons */
+            width: 85%; /* Wider buttons */
             max-width: 300px; /* Control maximum width */
             transition: background-color 0.3s, color 0.3s; /* Smooth transition */
         }
@@ -98,21 +100,24 @@
             color: black; /* Keep text color black on hover */
         }
 
-        @media (max-width: 414px) { /* iPhone XR size */
-        .btn {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
-        padding: 15px 25px;
-        width: 80vw;
+        @media (min-width: 320px) and (max-width: 767px) {
+            .btn {
+                width: 80%;
             }
         }
 
-        @media (min-width: 768px) { /* For larger screens */
-        .btn {
-        font-size: 1.6rem; /* Increase font size for larger screens */
-        padding: 20px 40px;
-         }
+        @media (min-width: 768px) {
+            .btn {
+                width: 70%;
+            }
         }
-               
+
+        @media (min-width: 1024px) {
+            .btn {
+                width: 50%;
+            }
+        }
+
 
     </style>
 </head>
