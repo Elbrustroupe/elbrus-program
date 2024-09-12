@@ -101,6 +101,15 @@
 
         /* Consistency across all screen sizes */
         @media (min-width: 320px) {
+             body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(150, 150, 150, 0.45) 0%, rgba(800, 800, 800, 0.85) 100%), 
+                        url('IMG_5724 (1).jpg') no-repeat 56.5% center;
+            background-size: 340% auto
+        }
             .btn {
                 padding: 10px 25px;
                 width: 65%;
@@ -109,17 +118,42 @@
         }
 
         @media (min-width: 360px) {
+            body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(150, 150, 150, 0.45) 0%, rgba(800, 800, 800, 0.85) 100%), 
+                        url('IMG_5724 (1).jpg') no-repeat 56.5% center;
+            background-size: 340% auto
+        }
+
             .btn {
                 height: 4%;
                 width: 65%;
                 font-size: 1.3rem;
             }
+            .logo {
+                
+                margin-top: 200px;
+
+            }
+            
             .container {
-        margin-top: -100px; /* Adjust to move the buttons up */
+        margin-top: -80px; /* Adjust to move the buttons up */
     }
         }
 
         @media (min-width: 375px) {
+             body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(150, 150, 150, 0.45) 0%, rgba(800, 800, 800, 0.85) 100%), 
+                        url('IMG_5724 (1).jpg') no-repeat 54% center;
+            background-size: 370% auto
+        }
             .btn {
 
                 width: 65%;
@@ -127,6 +161,15 @@
             }
         }
         @media (width: 390px) {
+             body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(150, 150, 150, 0.45) 0%, rgba(800, 800, 800, 0.85) 100%), 
+                        url('IMG_5724 (1).jpg') no-repeat 54% center;
+            background-size: 370% auto
+        }
             .btn {
                 height: 4%;
                 width: 65%;
@@ -142,6 +185,15 @@
         }
 
         @media (min-width: 412px) {
+             body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(150, 150, 150, 0.45) 0%, rgba(800, 800, 800, 0.85) 100%), 
+                        url('IMG_5724 (1).jpg') no-repeat 55% center;
+            background-size: 370% auto
+        }
             .btn {
                 height: 4%;
                 width: 65%;
@@ -151,10 +203,10 @@
             }
             .logo {
                 
-                margin-top: 80px;
+                margin-top: 40px;
             }
             .container {
-        margin-top: -150px; /* Adjust to move the buttons up */
+        margin-top: -140px; /* Adjust to move the buttons up */
     }
         }
 
@@ -211,32 +263,20 @@
             }
         }
 
-        /* Special adjustments for foldable devices */
-@media (min-width: 1080px) and (max-width: 2636px) {
-    .logo {
-        width: 450px; /* Larger logo for foldables */
-        margin-top: 350px;
-    }
-    .btn {
-        font-size: 3.8rem;
-        text-align: center;
-        width: 65%; /* Increase button width on larger devices */
-        padding: 10px 20px; /* Larger padding for foldables */
-        margin: 1.5vh 0; /* Add more vertical space between buttons */
-        border: 8px solid black; /* Black border */
-
-    }
-    .container {
-        margin-top: -600px; /* Adjust this for foldable devices */
-    }
-}
-
-
-/* Media Query specifically for Samsung Galaxy Z Fold */
-@media (min-width: 344px) and (max-width: 882px) and (orientation: portrait) {
+        /* Media Query specifically for Samsung Galaxy Z Fold */
+@media (width: 344px) and (height: 882px) and (orientation: portrait) {
+     body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(150, 150, 150, 0.45) 0%, rgba(800, 800, 800, 0.85) 100%), 
+                        url('IMG_5724 (1).jpg') no-repeat 51% center;
+            background-size: 440% auto
+        }
     .logo {
         width: 150px; /* Adjust the size */
-        margin-top: 140px; /* Push the logo down */
+        margin-top: 50px; /* Push the logo down */
         position: relative; /* Ensure the logo stays inside the page */
     }
 
@@ -248,9 +288,41 @@
     }
 
     .container {
-        margin-top: -200px; /* Move the buttons higher */
+        margin-top: -170px; /* Move the buttons higher */
     }
 }
+
+        /* Special adjustments for foldable devices */
+@media (min-width: 1080px) and (max-width: 2636px) {
+     body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(150, 150, 150, 0.45) 0%, rgba(800, 800, 800, 0.85) 100%), 
+                        url('IMG_5724 (1).jpg') no-repeat 52% center;
+            background-size: 420% auto
+        }
+    .logo {
+        width: 450px; /* Larger logo for foldables */
+        margin-top: 180px;
+    }
+    .btn {
+        font-size: 3.8rem;
+        text-align: center;
+        width: 65%; /* Increase button width on larger devices */
+        padding: 10px 20px; /* Larger padding for foldables */
+        margin: 1.5vh 0; /* Add more vertical space between buttons */
+        border: 8px solid black; /* Black border */
+
+    }
+    .container {
+        margin-top: -500px; /* Adjust this for foldable devices */
+    }
+}
+
+
+
 
     </style>
 </head>
