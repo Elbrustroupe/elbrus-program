@@ -50,7 +50,6 @@
             display: block;
             margin: 0 auto ; /* Increase the top margin to move the logo down */
             margin-top: 60px;
-            margin-bottom: 20px; /* Add some space after the logo */
             width: 150px; /* Adjust the logo size as needed */
             z-index: 2;
             position: relative;
@@ -64,7 +63,7 @@
             align-items: center;
             height: 100vh; /* Adjust container height */
             z-index: 2;
-            margin-top: -80px; /* Move the container up */
+            margin-top: -100px; /* Move the container up */
         }
 
         .container h1 {
@@ -87,11 +86,11 @@
             display: inline-block;
             font-family: 'Open Sans', sans-serif;
             font-size: 1.4rem; /* Increased font size */
-            margin: 10px 0 ; /* Increase vertical spacing between buttons */
+            margin: 2vh 0 ; /* Increase vertical spacing between buttons */
             cursor: pointer;
             border-radius: 50px; /* More rounded corners */
-            width: 85%; /* Wider buttons */
-            max-width: 300px; /* Control maximum width */
+            width: 50%; /* Wider buttons */
+            max-width: 900px; /* Control maximum width */
             transition: background-color 0.3s, color 0.3s; /* Smooth transition */
         }
 
@@ -100,24 +99,158 @@
             color: black; /* Keep text color black on hover */
         }
 
-        @media (min-width: 320px) and (max-width: 767px) {
+        /* Consistency across all screen sizes */
+        @media (min-width: 320px) {
             .btn {
-                width: 80%;
+                padding: 10px 25px;
+                width: 65%;
+                font-size: 1.2rem;
             }
+        }
+
+        @media (min-width: 360px) {
+            .btn {
+                height: 4%;
+                width: 65%;
+                font-size: 1.3rem;
+            }
+            .container {
+        margin-top: -100px; /* Adjust to move the buttons up */
+    }
+        }
+
+        @media (min-width: 375px) {
+            .btn {
+
+                width: 65%;
+                font-size: 1.4rem;
+            }
+        }
+        @media (width: 390px) {
+            .btn {
+                height: 4%;
+                width: 65%;
+                text-align: center;
+
+                font-size: 1.4rem;
+            }
+            .logo {
+                
+                margin-top: 120px;
+
+            }
+        }
+
+        @media (min-width: 412px) {
+            .btn {
+                height: 4%;
+                width: 65%;
+                text-align: center;
+
+                font-size: 1.4rem;
+            }
+            .logo {
+                
+                margin-top: 80px;
+            }
+            .container {
+        margin-top: -150px; /* Adjust to move the buttons up */
+    }
+        }
+
+        @media (min-width: 430px) {
+            .btn {
+                height: 4%;
+                width: 65%;
+                text-align: center;
+
+                font-size: 1.6rem;
+            }
+            .logo {
+                
+                margin-top: 80px;
+            }
+            .container {
+        margin-top: -130px; /* Adjust to move the buttons up */
+    }
         }
 
         @media (min-width: 768px) {
             .btn {
-                width: 70%;
+
+                height: 4%;
+                width: 65%;
+                text-align: center;
+
+                font-size: 3.2rem;            
             }
         }
 
         @media (min-width: 1024px) {
             .btn {
-                width: 50%;
+                width: 45%;
             }
         }
 
+        /* Fine-tuning for larger foldable devices */
+        @media (min-width: 1440px) {
+            .btn {
+                width: 40%;
+            }
+
+            .logo {
+                width: 180px; /* Adjusting logo size for larger screens */
+
+            }
+        }
+
+        @media (max-width: 400px) {
+            .logo {
+                margin-top: 40px;
+                width: 130px;
+            }
+        }
+
+        /* Special adjustments for foldable devices */
+@media (min-width: 1080px) and (max-width: 2636px) {
+    .logo {
+        width: 450px; /* Larger logo for foldables */
+        margin-top: 350px;
+    }
+    .btn {
+        font-size: 3.8rem;
+        text-align: center;
+        width: 65%; /* Increase button width on larger devices */
+        padding: 10px 20px; /* Larger padding for foldables */
+        margin: 1.5vh 0; /* Add more vertical space between buttons */
+        border: 8px solid black; /* Black border */
+
+    }
+    .container {
+        margin-top: -600px; /* Adjust this for foldable devices */
+    }
+}
+
+
+/* Media Query specifically for Samsung Galaxy Z Fold */
+@media (min-width: 344px) and (max-width: 882px) and (orientation: portrait) {
+    .logo {
+        width: 150px; /* Adjust the size */
+        margin-top: 140px; /* Push the logo down */
+        position: relative; /* Ensure the logo stays inside the page */
+    }
+
+    .btn {
+        font-size: 1.3rem; /* Adjust button text size */
+        width: 65%; /* Adjust button width */
+        padding: 10px 20px; /* Button padding */
+        margin: 15px 0; /* Space between buttons */
+    }
+
+    .container {
+        margin-top: -200px; /* Move the buttons higher */
+    }
+}
 
     </style>
 </head>
