@@ -79,17 +79,17 @@
             background-color: rgba(0,0,0,0.3); /* Transparent background */
             border: 2px solid black; /* Black border */
             color: black;
-            padding: 15px 25px; /* Increase vertical padding for taller buttons */
+            padding: 2vw 4vw; /* Increase vertical padding for taller buttons */
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-family: 'Open Sans', sans-serif;
             font-size: 1.4rem; /* Increased font size */
-            margin: 10px 0 ; /* Increase vertical spacing between buttons */
+            margin: 2vw 0 ; /* Increase vertical spacing between buttons */
             cursor: pointer;
             border-radius: 50px; /* More rounded corners */
-            width: 50%; /* Wider buttons */
-            max-width: 280px; /* Control maximum width */
+            width: 60vw /* Wider buttons */
+            max-width: 300px; /* Control maximum width */
             transition: background-color 0.3s, color 0.3s; /* Smooth transition */
         }
 
@@ -98,43 +98,21 @@
             color: black; /* Keep text color black on hover */
         }
 
-        @media (max-width: 600px) {
-            .btn {
-                padding: 15px 25px; /* Keep padding consistent */
-                font-size: 1.4em; /* Same font size */
-                width: 70%; /* Same width */
-            
+        @media (max-width: 414px) { /* iPhone XR size */
+        .btn {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        padding: 15px 25px;
+        width: 80vw;
+            }
         }
-        /* Media Query for iPhone 7 (smaller screens) */
-        @media (max-width: 375px) {
-            .container h1 {
-                margin-top: 60px; /* Increase top margin for iPhone 7 and similar smaller screens */
-    }
-}
-}
-        /* Media query for Samsung Z Fold 5 (both unfolded and folded) */
-@media (min-width: 373px) and (max-width: 840px) {
-    .container {
-        margin-top: -30px; /* Adjust the top margin as needed */
-    }
 
-    .btn {
-        width: 50%; /* Adjust the width for the buttons */
-        font-size: 1rem; /* Adjust the font size for the buttons */
-    }
-}
-
-/* Media query for Samsung Z Flip (folded and unfolded) */
-@media (min-width: 280px) and (max-width: 480px) {
-    .container {
-        margin-top: -40px; /* Adjust the top margin as needed */
-    }
-
-    .btn {
-        width: 55%; /* Adjust the width for the buttons */
-        font-size: 1.1rem; /* Adjust the font size for the buttons */
-    }
-}
+        @media (min-width: 768px) { /* For larger screens */
+        .btn {
+        font-size: 1.6rem; /* Increase font size for larger screens */
+        padding: 20px 40px;
+         }
+        }
+               
 
     </style>
 </head>
